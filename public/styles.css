@@ -100,4 +100,94 @@ h4 {
 }
 
 
+/* home.ejs - after login/sign up */
+
+.summary-card {
+    background-color: rgb(209, 169, 169);
+}
+
+
+.dashboard-container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "index-right index-left"
+      "index-right index-left";
+
+    padding: 2rem 2rem;
+}
   
+.dashboard-right { 
+    grid-area: index-right; 
+    align-items: center;
+    justify-content: center;
+}
+  
+.dashboard-left { 
+    grid-area: index-left; 
+    text-align: center;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.chart-image {
+    border-radius: 50%;
+    background-color: rgb(114, 168, 168);
+    padding: 10px;
+}
+
+
+/* home.ejs dashboard-overview & create exercise */
+
+.dashboard-create {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "over-view create-exercise create-exercise"
+      "over-view create-exercise create-exercise";
+}
+  
+.overview { 
+    grid-area: over-view; 
+    background-color: pink;
+}
+  
+.create-exercise { 
+    grid-area: create-exercise; 
+    background-color: grey;
+}
+
+.overview-card {
+    padding: .5rem;
+}
+
+.overview-card .card {
+    height: 75px;
+    margin: .5rem 0;
+}
+
+.primary-text {
+    text-align: center;
+}
+
+.text {
+    font-size: 15px;
+    padding: .5rem;
+}
+  
+.subtext {
+    font-size: 15px;
+    text-align: center;
+    padding: .25rem;
+    color: red;
+}

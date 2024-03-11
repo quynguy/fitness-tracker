@@ -32,7 +32,7 @@ app.get('/login', (req, res) => {
 })
 
 app.get('/signup', (req, res) => {
-    res.render('signup')
+    res.render('home')
 })
 
 app.post('/login', loginController);
