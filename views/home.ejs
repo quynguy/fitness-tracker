@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <div class="dashboard-create">
+      <div class="dashboard-overview">
         <div class="overview">
           <div class="overview-card">
             <div class="card">
@@ -94,6 +94,57 @@
           </div>
         </div>
         <div class="create-exercise"></div>
+      </div>
+
+
+
+      <div class="dashboard-create">
+        <div class="create-log"> 
+          <h1> Create Log </h1>
+          <div class="form-group">
+            <form>
+              <label for="type"> Date </label>
+              <input type="text" class="form-control" id="name" placeholder="Exercise">
+              <label for="type"> Type of exercise </label>
+              <input type="text" class="form-control" id="name" placeholder="Exercise">
+              <label for="type"> Repetitions </label>
+              <input type="number" class="form-control" id="name" placeholder="Exercise">
+              <label for="type"> Duration </label>
+              <input type="number" class="form-control" id="name" placeholder="Exercise">
+            </form>
+          </div>
+        </div>
+
+        <div class="edit-log"> 
+          <div class="log-name">
+            <h4 class="logtext"> Exercise for Today </h4>
+            <table class="table table-striped table-light">
+              <thead>
+                <tr>
+                  <th> Type </th>
+                  <th> Reps </th> 
+                  <th> Duration </th>
+                  <th> Action </th>
+                </tr>
+              </thead>
+
+              <tbody class="log-items">
+                <tr>
+                  <td>Type</td>
+                  <td>15</td>
+                  <td>10</td>
+                  <td>
+                    <a href="" class="btn btn-sm btn-warning logtext edit">Edit</a>
+                    <a href="" class="btn btn-sm btn-warning logtext delete">Delete</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            </tbody>
+          </div>
+    
+
+        </div>
       </div>
 
     </div>

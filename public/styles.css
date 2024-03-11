@@ -146,7 +146,7 @@ h4 {
 
 /* home.ejs dashboard-overview & create exercise */
 
-.dashboard-create {  
+.dashboard-overview {  
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -191,3 +191,36 @@ h4 {
     padding: .25rem;
     color: red;
 }
+
+/* form group > dashboard create */
+
+.dashboard-create {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "create-log edit-log edit-log"
+      "create-log edit-log edit-log";
+    background-color: pink;
+}
+  
+.create-log { 
+    grid-area: create-log; 
+    padding: .5rem;
+}
+  
+.edit-log { 
+    grid-area: edit-log; 
+    padding: .5rem;
+    background-color: rgb(190, 182, 182);
+}
+
+.logtext {
+    font-size: 15px;
+    text-align: center;
+    padding: .25rem;
+    color: rgb(61, 54, 54);
+}
+
