@@ -35,6 +35,7 @@ app.get('/signup', (req, res) => {
     res.render('home')
 })
 
+
 app.post('/login', loginController);
 
 app.post('/signup', signupController);
