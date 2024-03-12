@@ -102,15 +102,18 @@
         <div class="create-log"> 
           <h1> Create Log </h1>
           <div class="form-group">
-            <form>
-              <label for="type"> Date </label>
+            <form id="workoutForm">
+              <label for="date"> Date </label>
               <input type="text" class="form-control" id="name" placeholder="When?">
-              <label for="type"> Type of exercise </label>
-              <input type="text" class="form-control" id="name" placeholder="Exercise">
-              <label for="type"> Repetitions </label>
-              <input type="number" class="form-control" id="name" placeholder="Reps">
-              <label for="type"> Duration </label>
-              <input type="number" class="form-control" id="name" placeholder="Duration">
+              <label for="title"> Type of exercise </label>
+              <input type="text" class="form-control" id="name" placeholder="Push Ups">
+              <label for="reps"> Repetitions </label>
+              <input type="number" class="form-control" id="name" placeholder="15">
+              <label for="load"> Load </label>
+              <input type="number" class="form-control" id="name" placeholder="Body Weight">
+              <label for="sets"> Sets </label>
+              <input type="number" class="form-control" id="name" placeholder="3">
+              <button type="submit" id="submitWorkout"> Add </button>
             </form>
           </div>
         </div>
@@ -124,16 +127,18 @@
                   <tr>
                     <th> Type </th>
                     <th> Reps </th> 
-                    <th> Duration </th>
+                    <th> Sets </th>
+                    <th> Load </th>
                     <th> Action </th>
                   </tr>
                 </thead>
 
                 <tbody class="log-items">
                   <tr>
-                    <td>Type</td>
+                    <td>Push Ups</td>
                     <td>15</td>
-                    <td>10</td>
+                    <td>3</td>
+                    <td> Body Weight</td>
                     <td>
                       <a href="/edit" class="btn btn-sm btn-warning logtext edit">Edit</a>
                       <a href="/delete" class="btn btn-sm btn-warning logtext delete">Delete</a>

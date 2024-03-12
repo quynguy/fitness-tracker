@@ -35,6 +35,10 @@ app.get('/signup', (req, res) => {
     res.render('home')
 })
 
+app.get('/api/workouts', (req, res) => {
+    res.render('review.ejs')
+})
+
 
 app.post('/login', loginController);
 
