@@ -1,16 +1,22 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const bodyParser = require('body-parser');
 
 const Users = require('./config');
 const loginController = require('../controllers/Login');
 const signupController = require('../controllers/SignUp');
+
+const workoutRoutes = require('../routes/workouts');
 
 const bcrypt = require('bcrypt');
 
 // convert data into json format
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+// middleware to parse JSON bodies
+app.use(bodyParser.json());
 
 // static folder path
 app.use(express.static('public'))

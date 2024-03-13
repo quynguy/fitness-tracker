@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    $('.datepicker').datepicker();
+
     $('#workoutForm').submit(function(event) {
         event.preventDefault(); 
         

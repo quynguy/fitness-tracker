@@ -224,3 +224,18 @@ h4 {
     color: rgb(61, 54, 54);
 }
 
+.ui-datepicker {
+    background-color: white; 
+    border: 1px solid #cccccc; 
+    width: 220px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.ui-datepicker td {
+    padding: 5px;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+    margin: 0 10px; 
+}

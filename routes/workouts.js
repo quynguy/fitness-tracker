@@ -18,7 +18,7 @@ router.get('/', getWorkouts);
 router.get('/:id', getWorkout);
 
 // post workout
-router.post('/', createWorkout);
+router.post('/api/workouts', createWorkout);
 
 // delete workout 
 router.delete('/:id', deleteWorkout);
